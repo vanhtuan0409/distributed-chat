@@ -18,7 +18,7 @@ var (
 
 func main() {
 	flag.IntVar(&port, "port", 5656, "TCP binding port")
-	flag.StringVar(&redisAddr, "redist", "localhost:6379", "Address of redis for pub/sub")
+	flag.StringVar(&redisAddr, "redis", "localhost:6379", "Address of redis for pub/sub")
 	flag.Parse()
 
 	bindingAddr := fmt.Sprintf(":%d", port)
